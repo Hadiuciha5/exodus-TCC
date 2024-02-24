@@ -1,0 +1,6 @@
+res://pick_menu/pick_menu.tscn
+res://pick_menu/magic.gdshader
+res://INTRO/light.gdshader
+res://play_intro/play_intro.tscn
+res://world/world.tscn
+res://play_intro/play_intro.gd

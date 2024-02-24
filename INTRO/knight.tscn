@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=3 uid="uid://cnugxo27md0n6"]
+
+[ext_resource type="Script" path="res://INTRO/knight.gd" id="1_0phx7"]
+[ext_resource type="Texture2D" uid="uid://dusecuful7xe4" path="res://ART/Walk.png" id="1_5hgsf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8umd7"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(0, 0, 56, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bgah"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(56, 0, 56, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjgrg"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(112, 0, 56, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcxvs"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(168, 0, 56, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lv1a"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(224, 0, 56, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8q5df"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(280, 0, 56, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nsdg"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(336, 0, 56, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kie2"]
+atlas = ExtResource("1_5hgsf")
+region = Rect2(392, 0, 56, 86)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_skoik"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8umd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bgah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjgrg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcxvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lv1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8q5df")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nsdg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kie2")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g4a3x"]
+radius = 29.0
+height = 132.0
+
+[node name="knight" type="CharacterBody2D"]
+script = ExtResource("1_0phx7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(256.5, 128.5)
+scale = Vector2(2.16071, 2.19767)
+sprite_frames = SubResource("SpriteFrames_skoik")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(249, 162)
+shape = SubResource("CapsuleShape2D_g4a3x")

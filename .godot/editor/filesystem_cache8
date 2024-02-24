@@ -1,0 +1,43 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1708750568
+export_presets.cfg::TextFile::-1::1708589131::0::1::::<><>::
+icon.svg::CompressedTexture2D::6257332854164581016::1708265723::1708265734::1::::<><>::
+::res://android/::1708584744
+::res://ART/::1708750454
+Cherophobia   pseudomorph_0z.mp3::AudioStreamMP3::5254976535638980575::1708089062::1708180750::1::::<><>::
+fire.png::CompressedTexture2D::2883646425023870503::1708067786::1708750454::1::::<><>::
+intro.ogv::VideoStreamTheora::-1::1708667722::0::1::::<><>::
+Jungle.png::CompressedTexture2D::3518210748581713442::1675093133::1708750454::1::::<><>::
+leadcoat.ttf::FontFile::2251231225190567908::1129196814::1708659475::1::::<><>::
+light.png::CompressedTexture2D::1215000250802104321::1708092163::1708750454::1::::<><>::
+Menu-Magic.png::CompressedTexture2D::2364314575259275735::1708056001::1708750454::1::::<><>::
+OPENING.png::CompressedTexture2D::8138645422879631519::1705816708::1708750454::1::::<><>::
+Skeleton-Walk.png::CompressedTexture2D::4671904947492663876::1708069692::1708750454::1::::<><>::
+skip_buttot.png::CompressedTexture2D::7404551580716351164::1708663279::1708750454::1::::<><>::
+something in the middle.png::CompressedTexture2D::6008464512051795037::1675093234::1708750454::1::::<><>::
+Tittle.png::CompressedTexture2D::5081263770573159953::1708071755::1708750454::1::::<><>::
+Walk.png::CompressedTexture2D::8600445222087620081::1708070972::1708750454::1::::<><>::
+::res://Flash/::1708264494
+flash.gd::GDScript::-1::1707803256::0::1::::<>Node2D<>::
+flash.tscn::PackedScene::8832972223704643061::1708264494::0::1::::<><>::res://Flash/flash.gd<>uid://dn7okiahy76jr::::res://ART/OPENING.png
+::res://INTRO/::1708742599
+fire.gd::GDScript::-1::1708090142::0::1::::<>Sprite2D<>::
+fire.tscn::PackedScene::5144170096640081992::1708142345::0::1::::<><>::uid://bhc4iaa10f1rf::::res://ART/fire.png<>res://INTRO/fire.gd
+intro.gd::GDScript::-1::1708182643::0::1::::<>Node2D<>::
+intro.tscn::PackedScene::1983120333271279652::1708660948::0::1::::<><>::res://INTRO/intro.gd<>uid://crussd05smlm0::::res://ART/something in the middle.png<>uid://cg4sxwk7iwexr::::res://ART/Cherophobia   pseudomorph_0z.mp3<>uid://cfj4y210bqnoi::::res://INTRO/fire.tscn<>uid://cennw30ednc6t::::res://ART/Tittle.png<>uid://ingvyg21dy2p::::res://INTRO/light.tscn<>uid://crslq63dr5cql::::res://INTRO/skeleton.tscn<>uid://cnugxo27md0n6::::res://INTRO/knight.tscn
+knight.gd::GDScript::-1::1708161097::0::1::::<>CharacterBody2D<>::
+knight.tscn::PackedScene::5726990043484968149::1708179534::0::1::::<><>::res://INTRO/knight.gd<>uid://dusecuful7xe4::::res://ART/Walk.png
+light.gd::GDScript::-1::1708093311::0::1::::<>Sprite2D<>::
+light.gdshader::Shader::-1::1708742599::0::1::::<><>::
+light.tscn::PackedScene::588750734626515485::1708141831::0::1::::<><>::uid://rks42ms16iw4::::res://ART/light.png<>res://INTRO/light.gdshader<>res://INTRO/light.gd
+skeleton.gd::GDScript::-1::1708161240::0::1::::<>CharacterBody2D<>::
+skeleton.tscn::PackedScene::6003908640067322131::1708148738::0::1::::<><>::uid://b7tdueiqpdycy::::res://ART/Skeleton-Walk.png<>res://INTRO/skeleton.gd
+::res://pick_menu/::1708742599
+magic.gdshader::Shader::-1::1708742599::0::1::::<><>::
+magic.tscn::PackedScene::2005974056326537492::1708660949::0::1::::<><>::res://pick_menu/magic.gdshader<>uid://8xj6epxdj73h::::res://ART/Menu-Magic.png<>res://pick_menu/Sprite2D.gd
+pick_menu.gd::GDScript::-1::1708662386::0::1::::<>Node2D<>::
+pick_menu.tscn::PackedScene::7250675406217625965::1708668698::0::1::::<><>::res://pick_menu/pick_menu.gd<>uid://7crpjqbfrbku::::res://ART/leadcoat.ttf<>uid://3tydnf510skq::::res://pick_menu/magic.tscn
+Sprite2D.gd::GDScript::-1::1708660942::0::1::::<>Sprite2D<>::
+::res://play_intro/::1708742599
+play_intro.gd::GDScript::-1::1708742592::0::1::::<>Node2D<>::
+play_intro.tscn::PackedScene::612132641521328547::1708742599::0::1::::<><>::res://play_intro/play_intro.gd<>uid://ddq25aoi88kdw::::res://ART/skip_buttot.png<>res://ART/intro.ogv

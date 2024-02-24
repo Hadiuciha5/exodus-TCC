@@ -1,0 +1,87 @@
+[gd_scene load_steps=9 format=3 uid="uid://dbkjtgxf7brfx"]
+
+[ext_resource type="Script" path="res://pick_menu/pick_menu.gd" id="1_e4fsm"]
+[ext_resource type="FontFile" uid="uid://7crpjqbfrbku" path="res://ART/leadcoat.ttf" id="2_mvhig"]
+[ext_resource type="PackedScene" uid="uid://3tydnf510skq" path="res://pick_menu/magic.tscn" id="3_4a1gk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_afh6o"]
+
+[sub_resource type="Theme" id="Theme_vmwiq"]
+default_base_scale = 0.82
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bx28m"]
+bg_color = Color(0.52549, 0.133333, 0.313726, 0.764706)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.156863, 0.156863, 0.282353, 1)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6k6si"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_0cn21"]
+
+[node name="pick menu" type="Node2D"]
+script = ExtResource("1_e4fsm")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1154.0
+offset_bottom = 646.0
+color = Color(0.141176, 0.141176, 0.141176, 0.898039)
+
+[node name="New Game" type="Button" parent="."]
+modulate = Color(0.936782, 0.91831, 0.309329, 1)
+material = SubResource("ShaderMaterial_afh6o")
+offset_left = 450.0
+offset_top = 285.0
+offset_right = 708.0
+offset_bottom = 344.0
+theme = SubResource("Theme_vmwiq")
+theme_override_fonts/font = ExtResource("2_mvhig")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx28m")
+text = "NEW GAME"
+
+[node name="new_game" type="TouchScreenButton" parent="New Game"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(7.99997, 10)
+scale = Vector2(247, 42)
+texture_normal = SubResource("CanvasTexture_6k6si")
+
+[node name="Exit" type="Button" parent="."]
+modulate = Color(0.936782, 0.91831, 0.309329, 1)
+material = SubResource("ShaderMaterial_afh6o")
+offset_left = 447.0
+offset_top = 516.0
+offset_right = 705.0
+offset_bottom = 575.0
+theme = SubResource("Theme_vmwiq")
+theme_override_fonts/font = ExtResource("2_mvhig")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx28m")
+text = "EXIT"
+
+[node name="Exit" type="TouchScreenButton" parent="Exit"]
+modulate = Color(0.254902, 0.262745, 0.768627, 0.0470588)
+position = Vector2(3.05176e-05, 4)
+scale = Vector2(259, 55)
+texture_normal = SubResource("CanvasTexture_0cn21")
+
+[node name="Option" type="Button" parent="."]
+modulate = Color(0.936782, 0.91831, 0.309329, 1)
+material = SubResource("ShaderMaterial_afh6o")
+offset_left = 449.0
+offset_top = 398.0
+offset_right = 707.0
+offset_bottom = 457.0
+theme = SubResource("Theme_vmwiq")
+theme_override_fonts/font = ExtResource("2_mvhig")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/normal = SubResource("StyleBoxFlat_bx28m")
+text = "OPTION"
+
+[node name="Sprite2D" parent="." instance=ExtResource("3_4a1gk")]
+position = Vector2(580, 139)
+
+[connection signal="pressed" from="New Game/new_game" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Exit/Exit" to="." method="_on_touch_screen_button_pressed"]

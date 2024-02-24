@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://3tydnf510skq"]
+
+[ext_resource type="Shader" path="res://pick_menu/magic.gdshader" id="1_t00h0"]
+[ext_resource type="Texture2D" uid="uid://8xj6epxdj73h" path="res://ART/Menu-Magic.png" id="2_8g0r7"]
+[ext_resource type="Script" path="res://pick_menu/Sprite2D.gd" id="3_rv6i3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mp56o"]
+shader = ExtResource("1_t00h0")
+shader_parameter/glow_radius = null
+
+[sub_resource type="Animation" id="Animation_e8c57"]
+resource_name = "magic"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.349066, 0.698132, 1.0472, 1.39626, 1.74533, 2.0944, 2.44346, 2.79253, 3.14159, 3.49066, 3.83972, 4.18879, 4.53786, 4.88692, 5.23599, 5.58505, 5.93412, 6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_e5bi3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s84n3"]
+_data = {
+"RESET": SubResource("Animation_e5bi3"),
+"magic": SubResource("Animation_e8c57")
+}
+
+[node name="Sprite2D" type="Sprite2D"]
+material = SubResource("ShaderMaterial_mp56o")
+position = Vector2(235, 121)
+texture = ExtResource("2_8g0r7")
+script = ExtResource("3_rv6i3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_s84n3")
+}

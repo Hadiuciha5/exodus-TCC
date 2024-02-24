@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=3 uid="uid://dx30055c06cqf"]
+
+[ext_resource type="Script" path="res://Flash/flash.gd" id="1_noaie"]
+[ext_resource type="Texture2D" uid="uid://dn7okiahy76jr" path="res://ART/OPENING.png" id="2_c5ug3"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_87kcj"]
+
+[sub_resource type="Animation" id="Animation_n8nk7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_cq67e"]
+resource_name = "fade_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6, 2.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0.0117647, 0.0117647, 0.0117647, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_106lg"]
+resource_name = "fade_out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6, 2.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0.0117647, 0.0117647, 0.0117647, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0p56h"]
+_data = {
+"RESET": SubResource("Animation_n8nk7"),
+"fade_in": SubResource("Animation_cq67e"),
+"fade_out": SubResource("Animation_106lg")
+}
+
+[node name="Flash" type="Node2D"]
+script = ExtResource("1_noaie")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.0980392, 0.0980392, 0.0980392, 1)
+offset_right = 1151.0
+offset_bottom = 648.0
+texture = SubResource("CanvasTexture_87kcj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579, 325.5)
+scale = Vector2(2.53304, 1.89706)
+texture = ExtResource("2_c5ug3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 7.0
+offset_top = -1.0
+offset_right = 1154.0
+offset_bottom = 653.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0p56h")
+}
