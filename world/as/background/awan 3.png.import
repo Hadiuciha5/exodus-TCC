@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3t43r4bv5vo1"
-path="res://.godot/imported/awan 3.png-885961236fb70bf9047511df00dcacf7.ctex"
+path="res://.godot/imported/awan 3.png-1a0283fd9b486b9c5b4b1d6c96856ab7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/background/awan 3.png"
-dest_files=["res://.godot/imported/awan 3.png-885961236fb70bf9047511df00dcacf7.ctex"]
+source_file="res://world/as/background/awan 3.png"
+dest_files=["res://.godot/imported/awan 3.png-1a0283fd9b486b9c5b4b1d6c96856ab7.ctex"]
 
 [params]
 
