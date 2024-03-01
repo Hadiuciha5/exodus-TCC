@@ -1,5 +1,3 @@
-res://pick_menu/pick_menu.tscn
-res://UI/fade_overlay.tscn
-res://INTRO/light.gdshader
 res://pick_menu/magic.gdshader
-res://pick_menu/pick_menu.gd
+res://INTRO/light.gdshader
+res://pick_menu/node_2dsa.tscn
