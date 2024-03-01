@@ -12,4 +12,3 @@ TileMap
 RayCast2D
 CanvasModulate
 LightOccluder2D
-ShapeCast2D
