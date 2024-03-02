@@ -17,12 +17,35 @@ boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 
+[autoload]
+
+UserSettings="*res://settings/user_settings.gd"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_height"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
+
+[input]
+
+interact={
+"deadzone": 0.5,
+"events": []
+}
+
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://i18n/translation.de.translation", "res://i18n/translation.en.translation", "res://i18n/translation.ind.translation")
+
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.301961, 0.301961, 0.301961, 1)

@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://dbkjtgxf7brfx"]
+
+[ext_resource type="Script" path="res://pick_menu/pick_menu.gd" id="1_e4fsm"]
+[ext_resource type="FontFile" uid="uid://7crpjqbfrbku" path="res://ART/leadcoat.ttf" id="2_mvhig"]
+[ext_resource type="PackedScene" uid="uid://3tydnf510skq" path="res://pick_menu/magic.tscn" id="3_4a1gk"]
+[ext_resource type="PackedScene" uid="uid://5qcq1446xa3" path="res://Ui/FadeOverlay.tscn" id="5_ab3jf"]
+[ext_resource type="AudioStream" uid="uid://cg4sxwk7iwexr" path="res://ART/Cherophobia   pseudomorph_0z.mp3" id="5_pa7c3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxk0b"]
+bg_color = Color(0.6, 0.137255, 0.192157, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.466667, 0.0156863, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_56332"]
+font = ExtResource("2_mvhig")
+font_color = Color(1, 1, 0.215686, 1)
+
+[node name="pick menu" type="Node2D"]
+script = ExtResource("1_e4fsm")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1154.0
+offset_bottom = 646.0
+color = Color(0.141176, 0.141176, 0.141176, 0.898039)
+
+[node name="NewGameButton" type="Button" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 488.0
+offset_top = 360.0
+offset_right = 686.0
+offset_bottom = 402.0
+theme_override_fonts/font = ExtResource("2_mvhig")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_gxk0b")
+text = "New Game"
+
+[node name="ContinueButton" type="Button" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 488.0
+offset_top = 290.0
+offset_right = 686.0
+offset_bottom = 332.0
+theme_override_fonts/font = ExtResource("2_mvhig")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_gxk0b")
+text = "Continue"
+
+[node name="SettingsButton" type="Button" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 484.0
+offset_top = 429.0
+offset_right = 682.0
+offset_bottom = 471.0
+theme_override_fonts/font = ExtResource("2_mvhig")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_gxk0b")
+text = "Option"
+
+[node name="ExitButton" type="Button" parent="ColorRect"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 486.0
+offset_top = 496.0
+offset_right = 684.0
+offset_bottom = 538.0
+theme_override_fonts/font = ExtResource("2_mvhig")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_gxk0b")
+text = "Exit Game"
+
+[node name="Sprite2D" parent="." instance=ExtResource("3_4a1gk")]
+position = Vector2(580, 139)
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_pa7c3")
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 536.0
+offset_top = 566.0
+offset_right = 628.0
+offset_bottom = 594.0
+text = "@Meposite"
+label_settings = SubResource("LabelSettings_56332")
+
+[node name="FadeOverlay" parent="." instance=ExtResource("5_ab3jf")]
+unique_name_in_owner = true

@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dbkjtgxf7brfx"]
+[gd_scene load_steps=10 format=3 uid="uid://dbkjtgxf7brfx"]
 
 [ext_resource type="Script" path="res://pick_menu/pick_menu.gd" id="1_e4fsm"]
 [ext_resource type="FontFile" uid="uid://7crpjqbfrbku" path="res://ART/leadcoat.ttf" id="2_mvhig"]
+[ext_resource type="PackedScene" uid="uid://iyry84hayltr" path="res://play_intro/play_intro.tscn" id="2_v0yuy"]
 [ext_resource type="PackedScene" uid="uid://3tydnf510skq" path="res://pick_menu/magic.tscn" id="3_4a1gk"]
-[ext_resource type="PackedScene" uid="uid://bkk87o2ooo6at" path="res://UI/fade_overlay.tscn" id="4_tve40"]
+[ext_resource type="PackedScene" uid="uid://g4qhvbvdm62w" path="res://pick_menu/game_settings_scene.tscn" id="3_ry8dd"]
+[ext_resource type="PackedScene" uid="uid://5qcq1446xa3" path="res://Ui/Overlya/fade_overlay.tscn" id="5_ab3jf"]
 [ext_resource type="AudioStream" uid="uid://cg4sxwk7iwexr" path="res://ART/Cherophobia   pseudomorph_0z.mp3" id="5_pa7c3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxk0b"]
@@ -20,6 +22,8 @@ font_color = Color(1, 1, 0.215686, 1)
 
 [node name="pick menu" type="Node2D"]
 script = ExtResource("1_e4fsm")
+game_scene = ExtResource("2_v0yuy")
+settings_scene = ExtResource("3_ry8dd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1154.0
@@ -77,9 +81,6 @@ text = "Exit Game"
 [node name="Sprite2D" parent="." instance=ExtResource("3_4a1gk")]
 position = Vector2(580, 139)
 
-[node name="FadeOverlay" parent="." instance=ExtResource("4_tve40")]
-unique_name_in_owner = true
-
 [node name="music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_pa7c3")
 autoplay = true
@@ -91,3 +92,6 @@ offset_right = 628.0
 offset_bottom = 594.0
 text = "@Meposite"
 label_settings = SubResource("LabelSettings_56332")
+
+[node name="FadeOverlay" parent="." instance=ExtResource("5_ab3jf")]
+unique_name_in_owner = true

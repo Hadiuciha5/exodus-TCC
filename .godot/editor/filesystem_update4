@@ -1,3 +1,10 @@
-res://pick_menu/magic.gdshader
-res://INTRO/light.gdshader
-res://pick_menu/node_2dsa.tscn
+res://main.tscn
+res://Ui/theme.tres
+res://Ui/Component/float_range_game_settings_option.tscn
+res://Ui/Component/game_settings.tscn
+res://play_intro/play_intro.tscn
+res://pick_menu/game_settings_scene.tscn
+res://pick_menu/magic.tscn
+res://pick_menu/pick_menu.tscn
+res://world/world.tscn
+res://play_intro/play_intro.gd

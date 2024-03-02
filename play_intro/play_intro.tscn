@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://iyry84hayltr"]
 
 [ext_resource type="Script" path="res://play_intro/play_intro.gd" id="1_5oa5v"]
-[ext_resource type="Texture2D" path="res://ART/paper-with-sidebar-plain.png" id="2_bpw4a"]
+[ext_resource type="Texture2D" uid="uid://cah4p7io8xjgg" path="res://ART/paper-with-sidebar-plain.png" id="2_bpw4a"]
 [ext_resource type="FontFile" uid="uid://7crpjqbfrbku" path="res://ART/leadcoat.ttf" id="2_r5wvk"]
 
 [sub_resource type="Theme" id="Theme_gnw7r"]
@@ -64,3 +64,5 @@ theme_override_font_sizes/normal_font_size = 28
 text = "Didunia ini terdapat sebuah ke ajaiban sihir yang Bernama Mortal. Mortal Terdiri dari 12 Rune Sihir yang tersebar di penjuru dunia.
 
 Disuatu tempat di negara besar Bernama ambrani, dipimpin oleh raja Narmer II yang tamak.yang mengutamakan kekuasaan dari pada perasaan.banyak desa2 terpencil yang menjadi korban kekuasan dari sang raja. Para prajurit Kerajaannya pun tidak jauh dari kata bengis. Banyak warga yang di exsekusi mati ditempat tidak terkecuali Wanita dan anak - anak. Sikap yang tak pandang bulu inilah yang menjadikan raja Narmer II dijuliki The king Of Prosperity."
+
+[connection signal="pressed" from="Dialog_Box/Button/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]
