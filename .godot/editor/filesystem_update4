@@ -8,3 +8,6 @@ res://pick_menu/magic.tscn
 res://pick_menu/pick_menu.tscn
 res://world/world.tscn
 res://play_intro/play_intro.gd
+res://INTRO/intro.tscn
+res://i18n/translation.en.translation
+res://i18n/translation.id.translation

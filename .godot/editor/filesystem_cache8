@@ -1,8 +1,8 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1709358342
+::res://::1709359939
 export_presets.cfg::TextFile::-1::1708589131::0::1::::<><>::
 icon.svg::CompressedTexture2D::6257332854164581016::1708265723::1709357215::1::::<><>::
-main.tscn::PackedScene::8278296255956117852::1709358330::0::1::::<><>::
+main.tscn::PackedScene::8278296255956117852::1709359939::0::1::::<><>::
 README.md::TextFile::-1::1708762321::0::1::::<><>::
 ::res://ART/::1709357216
 Cherophobia   pseudomorph_0z.mp3::AudioStreamMP3::5254976535638980575::1708089062::1709357206::1::::<><>::
@@ -24,16 +24,16 @@ flash.gd::GDScript::-1::1709356177::0::1::::<>Node2D<>::
 flash.tscn::PackedScene::8832972223704643061::1709356786::0::1::::<><>::res://Flash/flash.gd<>uid://dn7okiahy76jr::::res://ART/OPENING.png
 ::res://fonts/::1709355691
 Montserrat-Medium.ttf::FontFile::782011831977885572::1709259523::1709355691::1::::<><>::
-::res://i18n/::1709356920
-translation.csv::Translation::5122575992490946351::1709312653::1709356920::1::::<><>::
+::res://i18n/::1709360126
+translation.csv::Translation::5122575992490946351::1709360119::1709360131::1::::<><>::
 translation.de.translation::OptimizedTranslation::5122575992490946351::1709309388::0::1::::<><>::
-translation.en.translation::OptimizedTranslation::5122575992490946351::1709356920::0::1::::<><>::
-translation.ind.translation::OptimizedTranslation::2050980526147480976::1709356920::0::1::::<><>::
-::res://INTRO/::1709356793
+translation.en.translation::OptimizedTranslation::5122575992490946351::1709360131::0::1::::<><>::
+translation.id.translation::OptimizedTranslation::5537822934110671829::1709360131::0::1::::<><>::
+::res://INTRO/::1709359945
 fire.gd::GDScript::-1::1708090142::0::1::::<>Sprite2D<>::
 fire.tscn::PackedScene::5144170096640081992::1708142345::0::1::::<><>::uid://bhc4iaa10f1rf::::res://ART/fire.png<>res://INTRO/fire.gd
 intro.gd::GDScript::-1::1708182643::0::1::::<>Node2D<>::
-intro.tscn::PackedScene::1983120333271279652::1709356793::0::1::::<><>::res://INTRO/intro.gd<>uid://crussd05smlm0::::res://ART/something in the middle.png<>uid://cg4sxwk7iwexr::::res://ART/Cherophobia   pseudomorph_0z.mp3<>uid://cfj4y210bqnoi::::res://INTRO/fire.tscn<>uid://cennw30ednc6t::::res://ART/Tittle.png<>uid://ingvyg21dy2p::::res://INTRO/light.tscn<>uid://crslq63dr5cql::::res://INTRO/skeleton.tscn<>uid://cnugxo27md0n6::::res://INTRO/knight.tscn
+intro.tscn::PackedScene::1983120333271279652::1709359945::0::1::::<><>::res://INTRO/intro.gd<>uid://crussd05smlm0::::res://ART/something in the middle.png<>uid://cg4sxwk7iwexr::::res://ART/Cherophobia   pseudomorph_0z.mp3<>uid://cfj4y210bqnoi::::res://INTRO/fire.tscn<>uid://cennw30ednc6t::::res://ART/Tittle.png<>uid://ingvyg21dy2p::::res://INTRO/light.tscn<>uid://crslq63dr5cql::::res://INTRO/skeleton.tscn<>uid://cnugxo27md0n6::::res://INTRO/knight.tscn
 knight.gd::GDScript::-1::1708161097::0::1::::<>CharacterBody2D<>::
 knight.tscn::PackedScene::5726990043484968149::1708179534::0::1::::<><>::res://INTRO/knight.gd<>uid://dusecuful7xe4::::res://ART/Walk.png
 light.gd::GDScript::-1::1708093311::0::1::::<>Sprite2D<>::
@@ -41,36 +41,36 @@ light.gdshader::Shader::-1::1709355654::0::1::::<><>::
 light.tscn::PackedScene::588750734626515485::1709356787::0::1::::<><>::uid://rks42ms16iw4::::res://ART/light.png<>res://INTRO/light.gdshader<>res://INTRO/light.gd
 skeleton.gd::GDScript::-1::1708161240::0::1::::<>CharacterBody2D<>::
 skeleton.tscn::PackedScene::6003908640067322131::1708148738::0::1::::<><>::uid://b7tdueiqpdycy::::res://ART/Skeleton-Walk.png<>res://INTRO/skeleton.gd
-::res://pick_menu/::1709358331
+::res://pick_menu/::1709359940
 game_settings_scene.gd::GDScript::-1::1709355328::0::1::::<>Node2D<>::
-game_settings_scene.tscn::PackedScene::481985094631344280::1709358331::0::1::::<><>::res://pick_menu/game_settings_scene.gd<>uid://5qcq1446xa3::::res://Ui/Overlya/fade_overlay.tscn<>uid://nbaodrlopo7y::::res://Ui/Component/game_settings.tscn<>uid://d22mpqutkotsu::::res://Ui/theme.tres<>uid://cg4sxwk7iwexr::::res://ART/Cherophobia   pseudomorph_0z.mp3
+game_settings_scene.tscn::PackedScene::481985094631344280::1709359940::0::1::::<><>::res://pick_menu/game_settings_scene.gd<>uid://5qcq1446xa3::::res://Ui/Overlya/fade_overlay.tscn<>uid://nbaodrlopo7y::::res://Ui/Component/game_settings.tscn<>uid://d22mpqutkotsu::::res://Ui/theme.tres<>uid://cg4sxwk7iwexr::::res://ART/Cherophobia   pseudomorph_0z.mp3
 magic.gdshader::Shader::-1::1709355654::0::1::::<><>::
-magic.tscn::PackedScene::2005974056326537492::1709358331::0::1::::<><>::res://pick_menu/magic.gdshader<>uid://8xj6epxdj73h::::res://ART/Menu-Magic.png<>res://pick_menu/Sprite2D.gd
+magic.tscn::PackedScene::2005974056326537492::1709359940::0::1::::<><>::res://pick_menu/magic.gdshader<>uid://8xj6epxdj73h::::res://ART/Menu-Magic.png<>res://pick_menu/Sprite2D.gd
 node_2d.tscn::PackedScene::2752193121678059::1709269292::0::1::::<><>::
 node_2dsa.tscn::PackedScene::5406804795881612265::1709269292::0::1::::<><>::
 pick_menu.gd::GDScript::-1::1709276610::0::1::::<>Node2D<>::
-pick_menu.tscn::PackedScene::7250675406217625965::1709358331::0::1::::<><>::res://pick_menu/pick_menu.gd<>uid://7crpjqbfrbku::::res://ART/leadcoat.ttf<>uid://iyry84hayltr::::res://play_intro/play_intro.tscn<>uid://3tydnf510skq::::res://pick_menu/magic.tscn<>uid://g4qhvbvdm62w::::res://pick_menu/game_settings_scene.tscn<>uid://5qcq1446xa3::::res://Ui/Overlya/fade_overlay.tscn<>uid://cg4sxwk7iwexr::::res://ART/Cherophobia   pseudomorph_0z.mp3
+pick_menu.tscn::PackedScene::7250675406217625965::1709359940::0::1::::<><>::res://pick_menu/pick_menu.gd<>uid://7crpjqbfrbku::::res://ART/leadcoat.ttf<>uid://iyry84hayltr::::res://play_intro/play_intro.tscn<>uid://3tydnf510skq::::res://pick_menu/magic.tscn<>uid://g4qhvbvdm62w::::res://pick_menu/game_settings_scene.tscn<>uid://crussd05smlm0::::res://ART/something in the middle.png<>uid://5qcq1446xa3::::res://Ui/Overlya/fade_overlay.tscn<>uid://cg4sxwk7iwexr::::res://ART/Cherophobia   pseudomorph_0z.mp3
 Sprite2D.gd::GDScript::-1::1708660942::0::1::::<>Sprite2D<>::
-::res://play_intro/::1709358331
-play_intro.gd::GDScript::-1::1709265937::0::1::::<>Node2D<>::
-play_intro.tscn::PackedScene::612132641521328547::1709358331::0::1::::<><>::res://play_intro/play_intro.gd<>uid://cah4p7io8xjgg::::res://ART/paper-with-sidebar-plain.png<>uid://7crpjqbfrbku::::res://ART/leadcoat.ttf
+::res://play_intro/::1709359940
+play_intro.gd::GDScript::-1::1709358401::0::1::::<>Node2D<>::
+play_intro.tscn::PackedScene::612132641521328547::1709359940::0::1::::<><>::res://play_intro/play_intro.gd<>uid://cah4p7io8xjgg::::res://ART/paper-with-sidebar-plain.png<>uid://7crpjqbfrbku::::res://ART/leadcoat.ttf
 ::res://savegame/::1709266613
 save_game.gd::GDScript::-1::1709259523::0::1::::SaveGame<>Node<>::
 ::res://settings/::1709357212
 user_settings.gd::GDScript::-1::1709357212::0::1::::<>Node<>::
-::res://Ui/::1709357213
-theme.tres::Theme::9110855291634462388::1709357213::0::1::::<><>::
-::res://Ui/Component/::1709358330
+::res://Ui/::1709358359
+theme.tres::Theme::9110855291634462388::1709358359::0::1::::<><>::
+::res://Ui/Component/::1709359940
 float_range_game_settings_option.gd::GDScript::-1::1709311718::0::1::::<>HSlider<>::
-float_range_game_settings_option.tscn::PackedScene::5856191182321122793::1709358330::0::1::::<><>::res://Ui/Component/float_range_game_settings_option.gd
+float_range_game_settings_option.tscn::PackedScene::5856191182321122793::1709359939::0::1::::<><>::res://Ui/Component/float_range_game_settings_option.gd
 game_settings.gd::GDScript::-1::1709352114::0::1::::<>VBoxContainer<>::
-game_settings.tscn::PackedScene::914544530513980040::1709358330::0::1::::<><>::uid://cpo1u33eut0i4::::res://Ui/Component/float_range_game_settings_option.tscn<>res://Ui/Component/game_settings.gd<>uid://d22mpqutkotsu::::res://Ui/theme.tres
+game_settings.tscn::PackedScene::914544530513980040::1709359940::0::1::::<><>::uid://cpo1u33eut0i4::::res://Ui/Component/float_range_game_settings_option.tscn<>res://Ui/Component/game_settings.gd<>uid://d22mpqutkotsu::::res://Ui/theme.tres
 ::res://Ui/Overlya/::1709356793
 fade_overlay.gd::GDScript::-1::1709313727::0::1::::FadeOverlay<>ColorRect<>::
 fade_overlay.tscn::PackedScene::62907257990009696::1709356793::0::1::::<><>::res://Ui/Overlya/fade_overlay.gd
-::res://world/::1709358331
+::res://world/::1709359940
 world.gd::GDScript::-1::1709307951::0::1::::<>RefCounted<>::
-world.tscn::PackedScene::2780895349452518853::1709358331::0::1::::<><>::res://world/world.gd
+world.tscn::PackedScene::2780895349452518853::1709359940::0::1::::<><>::res://world/world.gd
 ::res://world/as/::1709265940
 ::res://world/as/background/::1709357217
 awa 1.png::CompressedTexture2D::4952902025556522098::1709265939::1709357216::1::::<><>::
