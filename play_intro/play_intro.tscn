@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://iyry84hayltr"]
+[gd_scene load_steps=11 format=3 uid="uid://iyry84hayltr"]
 
 [ext_resource type="Script" path="res://play_intro/play_intro.gd" id="1_5oa5v"]
 [ext_resource type="Texture2D" uid="uid://cah4p7io8xjgg" path="res://ART/paper-with-sidebar-plain.png" id="2_bpw4a"]
 [ext_resource type="FontFile" uid="uid://7crpjqbfrbku" path="res://ART/leadcoat.ttf" id="2_r5wvk"]
+[ext_resource type="PackedScene" uid="uid://5qcq1446xa3" path="res://Ui/Overlya/fade_overlay.tscn" id="4_juqfl"]
 
 [sub_resource type="Theme" id="Theme_gnw7r"]
 
@@ -19,6 +20,14 @@ bg_color = Color(0.992157, 0, 0.156863, 1)
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_pt0ti"]
 
+[sub_resource type="Animation" id="Animation_vymbq"]
+resource_name = "text1"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xx5uu"]
+_data = {
+"text1": SubResource("Animation_vymbq")
+}
+
 [node name="Play_intro" type="Node2D"]
 script = ExtResource("1_5oa5v")
 
@@ -33,36 +42,46 @@ scale = Vector2(0.782552, 0.795573)
 texture = ExtResource("2_bpw4a")
 
 [node name="Button" type="Button" parent="Dialog_Box"]
-offset_left = 227.461
-offset_top = 281.558
-offset_right = 345.461
-offset_bottom = 338.558
+unique_name_in_owner = true
+offset_left = 81.7837
+offset_top = 247.62
+offset_right = 330.784
+offset_bottom = 304.62
 theme = SubResource("Theme_gnw7r")
 theme_override_fonts/font = ExtResource("2_r5wvk")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_usl7u")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1yl26")
-text = "Next"
+text = "return_to_main"
 
-[node name="TouchScreenButton" type="TouchScreenButton" parent="Dialog_Box/Button"]
+[node name="kembali" type="TouchScreenButton" parent="Dialog_Box/Button"]
+unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
-position = Vector2(1.27789, 2.51392)
-scale = Vector2(115, 54)
+position = Vector2(5.1115, 2.51394)
+scale = Vector2(237.684, 54)
 texture_normal = SubResource("CanvasTexture_pt0ti")
 
 [node name="Dialog" type="RichTextLabel" parent="Dialog_Box"]
-offset_left = -253.018
-offset_top = -310.468
-offset_right = 268.982
-offset_bottom = 269.532
+offset_left = -253.0
+offset_top = -310.0
+offset_right = 269.0
+offset_bottom = -212.0
 theme_override_colors/default_color = Color(0.780392, 0.498039, 0.160784, 1)
 theme_override_colors/font_selected_color = Color(0, 0.0313726, 0.65098, 1)
 theme_override_colors/font_shadow_color = Color(0.25098, 0.027451, 0.0745098, 1)
 theme_override_colors/font_outline_color = Color(1, 0.176471, 0.12549, 1)
 theme_override_fonts/normal_font = ExtResource("2_r5wvk")
 theme_override_font_sizes/normal_font_size = 28
-text = "Didunia ini terdapat sebuah ke ajaiban sihir yang Bernama Mortal. Mortal Terdiri dari 12 Rune Sihir yang tersebar di penjuru dunia.
+bbcode_enabled = true
+text = "story_1"
 
-Disuatu tempat di negara besar Bernama ambrani, dipimpin oleh raja Narmer II yang tamak.yang mengutamakan kekuasaan dari pada perasaan.banyak desa2 terpencil yang menjadi korban kekuasan dari sang raja. Para prajurit Kerajaannya pun tidak jauh dari kata bengis. Banyak warga yang di exsekusi mati ditempat tidak terkecuali Wanita dan anak - anak. Sikap yang tak pandang bulu inilah yang menjadikan raja Narmer II dijuliki The king Of Prosperity."
+[node name="FadeOverlay" parent="." instance=ExtResource("4_juqfl")]
+unique_name_in_owner = true
+visible = false
 
-[connection signal="pressed" from="Dialog_Box/Button/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xx5uu")
+}
+
+[connection signal="released" from="Dialog_Box/Button/kembali" to="." method="_on_kembali_released"]

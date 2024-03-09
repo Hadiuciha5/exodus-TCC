@@ -3,11 +3,8 @@ res://Ui/theme.tres
 res://Ui/Component/float_range_game_settings_option.tscn
 res://Ui/Component/game_settings.tscn
 res://play_intro/play_intro.tscn
-res://pick_menu/game_settings_scene.tscn
 res://pick_menu/magic.tscn
 res://pick_menu/pick_menu.tscn
-res://world/world.tscn
-res://play_intro/play_intro.gd
 res://INTRO/intro.tscn
-res://i18n/translation.en.translation
-res://i18n/translation.id.translation
+res://play_intro/seeting.tscn
+res://play_intro/play_intro.gd

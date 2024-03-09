@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://7dipp0ax8s6m"]
+
+[ext_resource type="Script" path="res://play_intro/seeting.gd" id="1_bo5wt"]
+[ext_resource type="PackedScene" uid="uid://nbaodrlopo7y" path="res://Ui/Component/game_settings.tscn" id="2_ju32k"]
+[ext_resource type="PackedScene" uid="uid://5qcq1446xa3" path="res://Ui/Overlya/fade_overlay.tscn" id="3_jsegu"]
+[ext_resource type="AudioStream" uid="uid://cg4sxwk7iwexr" path="res://ART/Cherophobia   pseudomorph_0z.mp3" id="4_x15qb"]
+
+[node name="seeting" type="Node2D"]
+script = ExtResource("1_bo5wt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1157.0
+offset_bottom = 650.0
+color = Color(0.227451, 0.227451, 0.227451, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 428.0
+offset_top = 169.0
+offset_right = 771.0
+offset_bottom = 192.0
+text = "settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameSettings" parent="." instance=ExtResource("2_ju32k")]
+offset_left = 343.0
+offset_top = 259.0
+offset_right = 991.0
+offset_bottom = 388.0
+
+[node name="ReturnButton" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 411.0
+offset_top = 460.0
+offset_right = 821.0
+offset_bottom = 491.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "return_to_main"
+
+[node name="FadeOverlay" parent="." instance=ExtResource("3_jsegu")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_x15qb")
+autoplay = true
+bus = &"Music"
