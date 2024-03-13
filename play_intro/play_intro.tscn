@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://iyry84hayltr"]
+[gd_scene load_steps=12 format=3 uid="uid://iyry84hayltr"]
 
 [ext_resource type="Script" path="res://play_intro/play_intro.gd" id="1_5oa5v"]
 [ext_resource type="Texture2D" uid="uid://cah4p7io8xjgg" path="res://ART/paper-with-sidebar-plain.png" id="2_bpw4a"]
 [ext_resource type="FontFile" uid="uid://7crpjqbfrbku" path="res://ART/leadcoat.ttf" id="2_r5wvk"]
+[ext_resource type="Script" path="res://play_intro/Dialog.gd" id="4_4fdj7"]
 [ext_resource type="PackedScene" uid="uid://5qcq1446xa3" path="res://Ui/Overlya/fade_overlay.tscn" id="4_juqfl"]
 
 [sub_resource type="Theme" id="Theme_gnw7r"]
@@ -52,7 +53,7 @@ theme_override_fonts/font = ExtResource("2_r5wvk")
 theme_override_font_sizes/font_size = 28
 theme_override_styles/normal = SubResource("StyleBoxFlat_usl7u")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_1yl26")
-text = "return_to_main"
+text = "skip"
 
 [node name="kembali" type="TouchScreenButton" parent="Dialog_Box/Button"]
 unique_name_in_owner = true
@@ -65,7 +66,7 @@ texture_normal = SubResource("CanvasTexture_pt0ti")
 offset_left = -253.0
 offset_top = -310.0
 offset_right = 269.0
-offset_bottom = -212.0
+offset_bottom = 235.0
 theme_override_colors/default_color = Color(0.780392, 0.498039, 0.160784, 1)
 theme_override_colors/font_selected_color = Color(0, 0.0313726, 0.65098, 1)
 theme_override_colors/font_shadow_color = Color(0.25098, 0.027451, 0.0745098, 1)
@@ -73,7 +74,9 @@ theme_override_colors/font_outline_color = Color(1, 0.176471, 0.12549, 1)
 theme_override_fonts/normal_font = ExtResource("2_r5wvk")
 theme_override_font_sizes/normal_font_size = 28
 bbcode_enabled = true
-text = "story_1"
+script = ExtResource("4_4fdj7")
+
+[node name="Timer" type="Timer" parent="Dialog_Box/Dialog"]
 
 [node name="FadeOverlay" parent="." instance=ExtResource("4_juqfl")]
 unique_name_in_owner = true

@@ -13,6 +13,7 @@ var next_scene = game_scene
 var new_game = true
 
 func _ready() -> void:
+	MusicControl.play_music()
 	overlay.visible = true
 	new_game_button.disabled = game_scene == null
 	settings_button.disabled = settings_scene == null
@@ -51,3 +52,4 @@ func _on_fade_overlay_on_complete_fade_out() -> void:
 	if new_game and SaveGame.has_save():
 		SaveGame.delete_save()
 	get_tree().change_scene_to_packed(next_scene)
+

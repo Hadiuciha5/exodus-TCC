@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dbkjtgxf7brfx"]
+[gd_scene load_steps=10 format=3 uid="uid://dbkjtgxf7brfx"]
 
 [ext_resource type="Script" path="res://pick_menu/pick_menu.gd" id="1_e4fsm"]
 [ext_resource type="FontFile" uid="uid://7crpjqbfrbku" path="res://ART/leadcoat.ttf" id="2_mvhig"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://3tydnf510skq" path="res://pick_menu/magic.tscn" id="3_4a1gk"]
 [ext_resource type="Texture2D" uid="uid://crussd05smlm0" path="res://ART/something in the middle.png" id="4_a4s7v"]
 [ext_resource type="PackedScene" uid="uid://5qcq1446xa3" path="res://Ui/Overlya/fade_overlay.tscn" id="5_ab3jf"]
-[ext_resource type="AudioStream" uid="uid://b3rdba2f3ae0x" path="res://ART/Cherophobia-pseudomorph_0z.ogg" id="7_gv3ss"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxk0b"]
 bg_color = Color(0.6, 0.137255, 0.192157, 1)
@@ -86,11 +85,6 @@ text = "leave_game"
 
 [node name="Sprite2D" parent="." instance=ExtResource("3_4a1gk")]
 position = Vector2(580, 139)
-
-[node name="music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_gv3ss")
-autoplay = true
-bus = &"Music"
 
 [node name="Label" type="Label" parent="."]
 offset_left = 536.0

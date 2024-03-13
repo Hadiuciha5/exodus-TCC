@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://deocumerc4jon"]
+
+[ext_resource type="Script" path="res://Ui/music/MusicControl.gd" id="1_eijr8"]
+
+[node name="MusicControl" type="Node"]
+script = ExtResource("1_eijr8")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+bus = &"Music"

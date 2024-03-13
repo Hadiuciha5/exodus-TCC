@@ -1,6 +1,7 @@
-AnimationPlayer
-Timer
+AudioStreamPlayer
 AudioStreamPlayer2D
+Timer
+AnimationPlayer
 ColorRect
 Label
 Button

@@ -1,10 +1,11 @@
-res://main.tscn
 res://Ui/theme.tres
-res://Ui/Component/float_range_game_settings_option.tscn
-res://Ui/Component/game_settings.tscn
-res://play_intro/play_intro.tscn
-res://pick_menu/magic.tscn
+res://Flash/flash.gd
+res://Ui/music/MusicControl.tscn
+res://Ui/music/MusicControl.gd
 res://pick_menu/pick_menu.tscn
-res://INTRO/intro.tscn
 res://play_intro/seeting.tscn
+res://play_intro/play_intro.tscn
+res://Flash/flash.tscn
 res://play_intro/play_intro.gd
+res://pick_menu/pick_menu.gd
+res://play_intro/seeting.gd
