@@ -1,8 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://3ivx4xmj2o7e"]
+[gd_scene load_steps=17 format=3 uid="uid://3ivx4xmj2o7e"]
 
 [ext_resource type="Script" path="res://INTRO/intro.gd" id="1_5gdai"]
 [ext_resource type="Texture2D" uid="uid://crussd05smlm0" path="res://ART/something in the middle.png" id="1_oo4dd"]
-[ext_resource type="AudioStream" uid="uid://cg4sxwk7iwexr" path="res://ART/Cherophobia   pseudomorph_0z.mp3" id="4_phk5a"]
 [ext_resource type="PackedScene" uid="uid://cfj4y210bqnoi" path="res://INTRO/fire.tscn" id="5_o5a23"]
 [ext_resource type="Texture2D" uid="uid://cennw30ednc6t" path="res://ART/Tittle.png" id="6_hkqsc"]
 [ext_resource type="PackedScene" uid="uid://ingvyg21dy2p" path="res://INTRO/light.tscn" id="6_j8l8u"]
@@ -23617,11 +23616,6 @@ offset_top = 329.0
 offset_right = 698.0
 offset_bottom = 353.0
 text = "- - Sentuh Layar Untuk Mulai - -"
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_phk5a")
-volume_db = 24.0
-autoplay = true
 
 [node name="Sprite2D" parent="." instance=ExtResource("5_o5a23")]
 position = Vector2(372, 324)

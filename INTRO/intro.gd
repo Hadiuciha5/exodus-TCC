@@ -2,6 +2,7 @@ extends Node2D
 
 
 func _ready():
+	MusicControl.play_music()
 	$AnimationPlayer.play("Text")
 
 

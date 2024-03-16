@@ -1,11 +1,11 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1710199211
+::res://::1710566357
 default_bus_layout.tres::AudioBusLayout::8340306528962843557::1709259523::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1708589131::0::1::::<><>::
 icon.svg::CompressedTexture2D::6257332854164581016::1708265723::1709357215::1::::<><>::
 main.tscn::PackedScene::8278296255956117852::1709956543::0::1::::<><>::
 README.md::TextFile::-1::1708762321::0::1::::<><>::
-::res://ART/::1710252559
+::res://ART/::1710253131
 Cherophobia   pseudomorph_0z.mp3::AudioStreamMP3::5254976535638980575::1708089062::1710252559::1::::<><>::
 Cherophobia-pseudomorph_0z.ogg::AudioStreamOggVorbis::4386986706123547545::1709360655::1710253131::1::::<><>::
 corgie-title.ogg::AudioStreamOggVorbis::1325051348666483655::1709259523::1709357178::1::::<><>::
@@ -50,6 +50,8 @@ node_2dsa.tscn::PackedScene::5406804795881612265::1709269292::0::1::::<><>::
 pick_menu.gd::GDScript::-1::1710200125::0::1::::<>Node2D<>::
 pick_menu.tscn::PackedScene::7250675406217625965::1710252760::0::1::::<><>::res://pick_menu/pick_menu.gd<>uid://7crpjqbfrbku::::res://ART/leadcoat.ttf<>uid://iyry84hayltr::::res://play_intro/play_intro.tscn<>uid://7dipp0ax8s6m::::res://play_intro/seeting.tscn<>uid://3tydnf510skq::::res://pick_menu/magic.tscn<>uid://crussd05smlm0::::res://ART/something in the middle.png<>uid://5qcq1446xa3::::res://Ui/Overlya/fade_overlay.tscn
 Sprite2D.gd::GDScript::-1::1708660942::0::1::::<>Sprite2D<>::
+::res://player/::1710302819
+player.tscn::PackedScene::2314027739358701532::1710302819::0::1::::<><>::uid://dk6xvu3oy0lv3::::res://world/as/player/Swordsman/Idle.png
 ::res://play_intro/::1710252760
 Dialog.gd::GDScript::-1::1709966642::0::1::::<>RichTextLabel<>::
 play_intro.gd::GDScript::-1::1710252751::0::1::::<>Node2D<>::
@@ -60,16 +62,16 @@ seeting.tscn::PackedScene::2252749479032337962::1710252760::0::1::::<><>::res://
 save_game.gd::GDScript::-1::1709259523::0::1::::SaveGame<>Node<>::
 ::res://settings/::1709357212
 user_settings.gd::GDScript::-1::1709357212::0::1::::<>Node<>::
-::res://Ui/::1710198822
-theme.tres::Theme::9110855291634462388::1710198822::0::1::::<><>::
+::res://Ui/::1710302624
+theme.tres::Theme::9110855291634462388::1710302624::0::1::::<><>::
 ::res://Ui/Component/::1709956544
 float_range_game_settings_option.gd::GDScript::-1::1709311718::0::1::::<>HSlider<>::
 float_range_game_settings_option.tscn::PackedScene::5856191182321122793::1709956543::0::1::::<><>::res://Ui/Component/float_range_game_settings_option.gd
 game_settings.gd::GDScript::-1::1709352114::0::1::::<>VBoxContainer<>::
 game_settings.tscn::PackedScene::914544530513980040::1709956544::0::1::::<><>::uid://cpo1u33eut0i4::::res://Ui/Component/float_range_game_settings_option.tscn<>res://Ui/Component/game_settings.gd<>uid://d22mpqutkotsu::::res://Ui/theme.tres
-::res://Ui/music/::1710252760
-MusicControl.tscn::PackedScene::7469076501287545397::1710252760::0::1::::<><>::res://Ui/music/MusicControl.gd
-MusicControl.gd::GDScript::-1::1710252727::0::1::::<>Node<>::
+::res://Ui/music/::1710253189
+MusicControl.gd::GDScript::-1::1710253189::0::1::::<>Node<>::
+MusicControl.tscn::PackedScene::7469076501287545397::1710253189::0::1::::<><>::res://Ui/music/MusicControl.gd
 ::res://Ui/Overlya/::1709356793
 fade_overlay.gd::GDScript::-1::1709313727::0::1::::FadeOverlay<>ColorRect<>::
 fade_overlay.tscn::PackedScene::62907257990009696::1709356793::0::1::::<><>::res://Ui/Overlya/fade_overlay.gd

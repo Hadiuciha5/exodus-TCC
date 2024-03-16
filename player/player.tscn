@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://776x018vcaki"]
+
+[ext_resource type="Texture2D" uid="uid://dk6xvu3oy0lv3" path="res://world/as/player/Swordsman/Idle.png" id="1_oj177"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxjkt"]
+atlas = ExtResource("1_oj177")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qo4nr"]
+atlas = ExtResource("1_oj177")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5332q"]
+atlas = ExtResource("1_oj177")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfil7"]
+atlas = ExtResource("1_oj177")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tud4q"]
+atlas = ExtResource("1_oj177")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6l7s"]
+atlas = ExtResource("1_oj177")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7020"]
+atlas = ExtResource("1_oj177")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_weayf"]
+atlas = ExtResource("1_oj177")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ecie"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxjkt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qo4nr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5332q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jfil7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tud4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6l7s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7020")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_weayf")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="player" type="AnimatedSprite2D"]
+position = Vector2(576, 276)
+sprite_frames = SubResource("SpriteFrames_3ecie")
+animation = &"idle"
+frame_progress = 0.819747
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
